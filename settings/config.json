@@ -1,8 +1,8 @@
 {
     "settings": {
-        "access_token": "ee794e9b-9c53-4604-b246-906730d2ed78",
+        "access_token": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "api_url": "https://graph-na02-useast1.api.smartthings.com/api/smartapps/installations/",
-        "app_id": "9207160c-a509-4a24-bcb2-5c466dcd37dc",
+        "app_id": "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         "poll_interval": 30
     },
     "storage": {
