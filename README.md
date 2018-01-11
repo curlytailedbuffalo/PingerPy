@@ -54,8 +54,13 @@ You can set the configuration manually or you can use the web server page to set
 
 ### Startup Scripts
 Startup scripts that can be used with Debian have been provided in the startup-scripts folder.
-There is a script for each PingerPy and PingerPy_webserver. The web server is not required for PingerPy to work - as long as the configuration file is set correctly.
+There is a script for each PingerPy and PingerPy_webserver. The web server is not required for PingerPy to work.
+Also in the root folder, the PingerPy and PingerPy_webserver can be run by themselves with:
 
+```
+./PingerPy
+./PingerPy_webserver
+```
 
 ## Reminder
 * You will need to install the Host Pinger smartapp and device handlers for this to work.
