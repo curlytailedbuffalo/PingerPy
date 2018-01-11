@@ -9,6 +9,7 @@ Once configured this will work with the Host Pinger Smartapp to display the serv
 The PingerPy application is made up of 2 parts:
 1. PingerPy - main module
 2. PingerPy - web server
+
 The PingerPy web server allows you to configure the installation without having to manually edit the config file
 You will be able to add hosts, and set the configuration through the web server URL
 
