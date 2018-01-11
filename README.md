@@ -10,29 +10,39 @@ Once configured this will work with the Host Pinger Smartapp to display the serv
 The PingerPy application is made up of 2 parts:
 1. PingerPy - main module
 2. PingerPy - web server
-```
+
 The PingerPy web server allows you to configure the installation without having to manually edit the config file
 You will be able to add hosts, and set the configuration through the web server URL
-```
+
 ## Installation
 
 ### General Install
 Installation should be fairly easy. The only requirement is that the system is running python 2.7
 1. Copy the directory to your computer
+
+```
+git clone https://github.com/curlytailedbuffalo/PingerPy.git /pingerpy
+```
+
 2. Make runonce.sh executable 
-```shell 
+
+```
 chmod u+x runonce.sh
 ```
+
 3. Execute runonce.sh 
-```shell
+
+```
 ./runonce.sh
 ```
+
 4. Now you can run the main program with 
-```shell
+
+```
 ./run.sh
 ```
 
-*Runonce is used to set the permissions values for all the other executable files, once complete run.sh initiates the actual main PingerPy and PingerPy web server.
+Runonce is used to set the permissions values for all the other executable files, once complete run.sh initiates the actual main PingerPy and PingerPy web server.
 
 The main PingerPy app will run even if the configuration file is not set. It will sleep for 5 minutes and then check again for the configuration file, if it is found it will run as normal pinging all the configured hosts and sending the status to Smartthings
 
