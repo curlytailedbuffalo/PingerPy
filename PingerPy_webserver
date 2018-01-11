@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "Starting PingerPy webserver..." 
+cd server
+python serve.py

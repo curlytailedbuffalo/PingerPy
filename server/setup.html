@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="HandheldFriendly" content="true">
+		<title>PingerPy - Initial Setup</title>
+		
+		<style>
+			.container{
+				width:350px;
+			}
+			.content{
+				border:1px solid #000000;
+				padding-top:10px;
+				padding-bottom:20px;
+				padding-left:20px;
+				padding-right:20px;
+				margin-bottom:10px;
+			}
+			.middle{
+				margin: 0 auto;
+			}
+			.form-input{
+				display:block;
+				width:100%;
+			}
+			.form-input > label{
+				width:auto;
+				overflow-wrap: break-word;
+				display:block;
+				font-weight:bold;
+			}
+			.form-input > span{
+				width:auto;
+				overflow-wrap: break-word;
+				display:block;
+				font-weight: 100;
+				font-style: italic;
+			}	
+			.form-input > input{
+				width:100%;
+				padding:5px 10px;
+				margin: 5px 0px;
+				display:block;
+			}
+			.heading{
+				text-align:center;
+				margin-bottom:20px;
+				width:100%;
+			}
+			.centered{
+				text-align:center;
+				margin-bottom:20px;
+			}
+			.tomato{
+				color:tomato;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container middle">
+			
+			<div class="heading">
+				<h1>PingerPy</h1>
+			</div>
+			<div class="content middle">
+				<div class="centered tomato">
+					<h2>Initial Configuration</h2>
+					<p>A few settings are needed to be able to connect to the Host Pinger Smartapp.</p>
+				</div>
+				<form method="POST" action="/setup-complete">
+					<div class="form-input">
+						<label>Smartthings App ID*: </label>
+						<span>ex. 920d7j6c-a6h9-4b14-hn7j-g45666h93g1d</span>
+						<input type="text" name="setup_appid"/>
+					</div>
+					<div class="form-input">
+						<label>Smartthings Access Token*: </label>
+						<span>ex. e3fg6e9b-8k43-4f64-b6h6-g6j75td2eh3f</span>
+						<input type="text" name="setup_accesstoken"/>
+					</div>
+					<div class="form-input">
+						<label>Smartthings Endpoint URL*: </label>
+						<span>ex. https://graph-na02-useast1.api.smartthings.com/api/smartapps/installations/</span>
+						<input type="text" name="setup_endpointurl"/>
+					</div>
+					<div class="form-input">
+						<label>Polling Interval (minutes)*: </label>
+						<input type="number" name="setup_pollinterval"/>
+					</div>
+					<div class="form-input">
+						<input type="submit" value="Save Config!"/>
+					</div>
+				</form>
+			</div>
+			<a href="/" target="_parent" title="Home">...go back</a>
+		</div>
+	</body>
+</html>
