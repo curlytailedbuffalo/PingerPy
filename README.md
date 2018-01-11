@@ -16,7 +16,7 @@ You will be able to add hosts, and set the configuration through the web server 
 
 ## Installation
 
-### General Install/Run
+### General Install
 Installation should be fairly easy. The only requirement is that the system is running python 2.7
 1. Copy the directory to your computer
 2. Make runonce.sh executable 'chmod u+x runonce.sh'
@@ -24,6 +24,12 @@ Installation should be fairly easy. The only requirement is that the system is r
 4. Now you can run the main program with './run.sh'
 
 *Runonce is used to set the permissions values for all the other executable files, once complete run.sh initiates the actual pinger and web server.
+
+### Configuration
+Configuration is set in the settings/config.json file.
+You can set the configuration manually or you can use the web server page to set the configuration.
+* Web server access: 'localhost:9092' - home page, add hosts
+* Web server access: 'localhost:9092/setup' - initial configuration page
 
 ### Startup Scripts
 Startup scripts that can be used with Debian have been provided in the startup-scripts folder.
